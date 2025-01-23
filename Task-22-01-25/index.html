@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <script>
+        
+        function reverseString() {
+            const input = document.getElementById('reverseStringInput').value;
+            const result = input.split('').reverse().join('');
+            document.getElementById('reverseStringResult').innerText = result;
+        }
+
+        function isPalindrome() {
+            const input = document.getElementById('palindromeInput').value;
+            const reversed = input.split('').reverse().join('');
+            const result = input === reversed;
+            document.getElementById('palindromeResult').innerText = result ? "Yes" : "No";
+        }
+
+        function countVowels() {
+            const input = document.getElementById('vowelsInput').value;
+            const count = (input.match(/[aeiouAEIOU]/g) || []).length;
+            document.getElementById('vowelsResult').innerText = count;
+        }
+
+        function filterEvens() {
+            const input = document.getElementById('evensInput').value;
+            const numbers = input.split(',').map(Number);
+            const result = numbers.filter(num => num % 2 === 0);
+            document.getElementById('evensResult').innerText = result.join(', ');
+        }
+
+        function findLargest() {
+            const input = document.getElementById('largestInput').value;
+            const numbers = input.split(',').map(Number);
+            const result = Math.max(...numbers);
+            document.getElementById('largestResult').innerText = result;
+        }
+
+        function calculateFactorial() {
+            const input = Number(document.getElementById('factorialInput').value);
+            const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
+            const result = factorial(input);
+            document.getElementById('factorialResult').innerText = result;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>JavaScript Tasks</h1>
+
+    <div>
+        <h2>1. Reverse a String</h2>
+        <input type="text" id="reverseStringInput" placeholder="Enter a string">
+        <button onclick="reverseString()">Submit</button>
+        <p>Result: <span id="reverseStringResult"></span></p>
+    </div>
+
+    <div>
+        <h2>2. Check if a String is a Palindrome</h2>
+        <input type="text" id="palindromeInput" placeholder="Enter a string">
+        <button onclick="isPalindrome()">Submit</button>
+        <p>Result: <span id="palindromeResult"></span></p>
+    </div>
+
+    <div>
+        <h2>3. Count Vowels in a String</h2>
+        <input type="text" id="vowelsInput" placeholder="Enter a string">
+        <button onclick="countVowels()">Submit</button>
+        <p>Result: <span id="vowelsResult"></span></p>
+    </div>
+
+    <div>
+        <h2>4. Filter Even Numbers from an Array</h2>
+        <input type="text" id="evensInput" placeholder="Enter numbers separated by commas">
+        <button onclick="filterEvens()">Submit</button>
+        <p>Result: <span id="evensResult"></span></p>
+    </div>
+
+    <div>
+        <h2>5. Find the Largest Number in an Array</h2>
+        <input type="text" id="largestInput" placeholder="Enter numbers separated by commas">
+        <button onclick="findLargest()">Submit</button>
+        <p>Result: <span id="largestResult"></span></p>
+    </div>
+
+    <div>
+        <h2>6. Calculate Factorial of a Number</h2>
+        <input type="number" id="factorialInput" placeholder="Enter a number">
+        <button onclick="calculateFactorial()">Submit</button>
+        <p>Result: <span id="factorialResult"></span></p>
+    </div>
+
+    <!-- Add similar sections for other tasks -->
+
+</body>
+</html>
