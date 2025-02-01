@@ -6,7 +6,7 @@ import SidebarFooter from "./sidebarComponets/SidebarFooter";
 
 function sidebar() {
   return (
-    <div className="w-[349px] h-[1872px] bg-white text-black flex flex-col p-6">
+    <div className="w-[349px] h-[1650px] bg-white text-black flex flex-col p-6">
       <SidebarLogo />
 
       <SidebarItemList />

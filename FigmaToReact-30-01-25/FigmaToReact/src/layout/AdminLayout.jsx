@@ -1,6 +1,7 @@
 import React from 'react';// Adjust the path as necessary
 import Sidebar from '../components/sidebar/Sidebar';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar/Navbar';
+import DashBoard from '../components/MainDashboard/DashBoard';
 
 const AdminPage = () => {
   return (
@@ -11,9 +12,9 @@ const AdminPage = () => {
       {/* Main Content Area */}
       <div className="flex-1">
         <Navbar />
-        <main className="p-6 bg-[#f3f2f7]">
+        <main className="px-11 bg-[#f3f2f7]">
           {/* Your main content goes here */}
-          <h2 className="text-2xl font-bold">Welcome to the Admin Dashboard</h2>
+          <DashBoard/>
           {/* Add more components or content as needed */}
         </main>
       </div>

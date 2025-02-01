@@ -3,7 +3,7 @@ import MainLogo from "../../../../public/assets/images/logo/MainLogo.png";
 
 function SidebarLogo() {
   return (
-    <div className="flex items-center mb-12">
+    <div className="flex items-center mb-15">
       <img
         src={MainLogo}
         alt="Logo"
