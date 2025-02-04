@@ -88,7 +88,7 @@ function CustomerReview() {
               </div>
 
               {/* Right side image */}
-              <div className="absolute right-[-100px] top-7 h-full">
+              <div className="absolute right-[-100px] top-7">
                 <div className="w-full rounded-xl overflow-hidden">
                   <img
                     src={review.foodImage}
