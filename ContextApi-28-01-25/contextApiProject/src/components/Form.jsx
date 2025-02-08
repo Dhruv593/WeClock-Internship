@@ -18,7 +18,7 @@ function Form() {
 
   return (
     <div className="max-w-lg mx-auto mt-10 p-6 bg-blue-50 shadow-lg rounded-lg">
-      <h2 className="text-2xl font-semibold text-blue-700 mb-6">User Form</h2>
+      <h2 className="text-2xl font-semibold text-blue-700 mb-6">User Form using Context api</h2>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label className="block text-sm font-medium text-blue-900">Name</label>
